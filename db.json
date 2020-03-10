@@ -1,0 +1,1877 @@
+{
+  "forms": [
+    {
+      "definition": {
+        "fields": {
+          "kO4Fdo4u1r": {
+            "id": "kO4Fdo4u1r",
+            "type": "select",
+            "value": "",
+            "label": "Colors",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            },
+            "options": [
+              {
+                "value": "",
+                "label": "[Pick an Option]"
+              },
+              {
+                "value": "red",
+                "label": "Red"
+              },
+              {
+                "value": "blue",
+                "label": "Blue"
+              }
+            ]
+          },
+          "zzgBhSRL_w": {
+            "id": "zzgBhSRL_w",
+            "type": "select",
+            "value": "",
+            "label": "Animals",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            },
+            "options": [
+              {
+                "value": "",
+                "label": "[Pick an Option]"
+              },
+              {
+                "value": "cow",
+                "label": "Cow"
+              },
+              {
+                "value": "pig",
+                "label": "Pig"
+              },
+              {
+                "value": "cat",
+                "label": "Cat"
+              }
+            ]
+          },
+          "HKPDh-DiuY": {
+            "id": "HKPDh-DiuY",
+            "type": "select",
+            "value": "",
+            "label": "Space Objects",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            },
+            "options": [
+              {
+                "value": "",
+                "label": "[Pick an Option]"
+              },
+              {
+                "value": "planet",
+                "label": "Planet"
+              },
+              {
+                "value": "star",
+                "label": "Star"
+              }
+            ]
+          },
+          "0INdchEiZx": {
+            "id": "0INdchEiZx",
+            "type": "text",
+            "value": "",
+            "label": "Conditional",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "visible": [
+                      {
+                        "nodeId": "nJ7HxEkOWn",
+                        "portName": "output"
+                      }
+                    ]
+                  },
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              },
+              "IFR5zqrpoM": {
+                "id": "IFR5zqrpoM",
+                "x": 147,
+                "y": 116.5,
+                "type": "valueEqualsOneOfOptions",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "Em1YvUjYs0",
+                        "portName": "val1"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "kO4Fdo4u1r"
+                  },
+                  "selectedOptions": {
+                    "values": [
+                      "red"
+                    ]
+                  },
+                  "value": {}
+                }
+              },
+              "Em1YvUjYs0": {
+                "id": "Em1YvUjYs0",
+                "x": 365,
+                "y": 478.5,
+                "type": "and",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "val2": [
+                      {
+                        "nodeId": "27x7a-o0QP",
+                        "portName": "output"
+                      }
+                    ],
+                    "val1": [
+                      {
+                        "nodeId": "IFR5zqrpoM",
+                        "portName": "output"
+                      }
+                    ]
+                  },
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "nJ7HxEkOWn",
+                        "portName": "val2"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "val1": {
+                    "boolean": false
+                  },
+                  "val2": {
+                    "boolean": false
+                  }
+                }
+              },
+              "27x7a-o0QP": {
+                "id": "27x7a-o0QP",
+                "x": 85,
+                "y": 473.5,
+                "type": "valueEqualsOneOfOptions",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "Em1YvUjYs0",
+                        "portName": "val2"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "zzgBhSRL_w"
+                  },
+                  "selectedOptions": {
+                    "values": [
+                      "cow"
+                    ]
+                  },
+                  "value": {}
+                }
+              },
+              "SdcUJ6iWc0": {
+                "id": "SdcUJ6iWc0",
+                "x": 438,
+                "y": 171.5,
+                "type": "valueEqualsOneOfOptions",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "nJ7HxEkOWn",
+                        "portName": "val1"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "HKPDh-DiuY"
+                  },
+                  "selectedOptions": {
+                    "values": [
+                      "planet"
+                    ]
+                  },
+                  "value": {}
+                }
+              },
+              "nJ7HxEkOWn": {
+                "id": "nJ7HxEkOWn",
+                "x": 646,
+                "y": 435.5,
+                "type": "and",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "val2": [
+                      {
+                        "nodeId": "Em1YvUjYs0",
+                        "portName": "output"
+                      }
+                    ],
+                    "val1": [
+                      {
+                        "nodeId": "SdcUJ6iWc0",
+                        "portName": "output"
+                      }
+                    ]
+                  },
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "L9y4-xxI2Q",
+                        "portName": "visible"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "val1": {
+                    "boolean": false
+                  },
+                  "val2": {
+                    "boolean": false
+                  }
+                }
+              }
+            }
+          },
+          "MY2DB90X5l": {
+            "id": "MY2DB90X5l",
+            "type": "checkbox",
+            "value": false,
+            "label": "Some Checkbox",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "visible": [
+                      {
+                        "nodeId": "Y-IGwtLAqI",
+                        "portName": "visible"
+                      }
+                    ]
+                  },
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              },
+              "Y-IGwtLAqI": {
+                "id": "Y-IGwtLAqI",
+                "x": 155,
+                "y": 108.5,
+                "type": "field",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "visible": [
+                      {
+                        "nodeId": "L9y4-xxI2Q",
+                        "portName": "visible"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "0INdchEiZx"
+                  }
+                }
+              }
+            }
+          },
+          "gK1l3xcJCE": {
+            "id": "gK1l3xcJCE",
+            "type": "text",
+            "value": "",
+            "label": "New Field",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 956,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "visible": [
+                      {
+                        "nodeId": "syz92RzhwD",
+                        "portName": "output"
+                      }
+                    ]
+                  },
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              },
+              "zrzGp-NZGc": {
+                "id": "zrzGp-NZGc",
+                "x": 204,
+                "y": 139.5,
+                "type": "field",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "value": [
+                      {
+                        "nodeId": "YsQSeI072y",
+                        "portName": "val1"
+                      }
+                    ],
+                    "visible": [
+                      {
+                        "nodeId": "syz92RzhwD",
+                        "portName": "val1"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "MY2DB90X5l"
+                  }
+                }
+              },
+              "syz92RzhwD": {
+                "id": "syz92RzhwD",
+                "x": 710,
+                "y": 362.5,
+                "type": "and",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "val2": [
+                      {
+                        "nodeId": "YsQSeI072y",
+                        "portName": "output"
+                      }
+                    ],
+                    "val1": [
+                      {
+                        "nodeId": "zrzGp-NZGc",
+                        "portName": "visible"
+                      }
+                    ]
+                  },
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "L9y4-xxI2Q",
+                        "portName": "visible"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "val1": {
+                    "boolean": false
+                  },
+                  "val2": {
+                    "boolean": false
+                  }
+                }
+              },
+              "YsQSeI072y": {
+                "id": "YsQSeI072y",
+                "x": 471,
+                "y": 349.5,
+                "type": "valueEqualsBoolean",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "val1": [
+                      {
+                        "nodeId": "zrzGp-NZGc",
+                        "portName": "value"
+                      }
+                    ]
+                  },
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "syz92RzhwD",
+                        "portName": "val2"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "val1": {},
+                  "boolean": {
+                    "boolean": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fieldsOrder": [
+          "kO4Fdo4u1r",
+          "zzgBhSRL_w",
+          "HKPDh-DiuY",
+          "0INdchEiZx",
+          "MY2DB90X5l",
+          "gK1l3xcJCE"
+        ],
+        "title": "Official Complaint"
+      },
+      "id": "DbQlsJETkJ",
+      "dateCreated": "1583619821085",
+      "dateModified": 1583623916929
+    },
+    {
+      "definition": {
+        "fields": {
+          "kO4Fdo4u1r": {
+            "id": "kO4Fdo4u1r",
+            "type": "select",
+            "value": "",
+            "label": "Colors",
+            "visible": true,
+            "disabled": false,
+            "required": true,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            },
+            "options": [
+              {
+                "value": "",
+                "label": "[Pick an Option]"
+              },
+              {
+                "value": "red",
+                "label": "Red"
+              },
+              {
+                "value": "blue",
+                "label": "Blue"
+              }
+            ],
+            "name": "colors"
+          },
+          "zzgBhSRL_w": {
+            "id": "zzgBhSRL_w",
+            "type": "select",
+            "value": "",
+            "label": "Animals",
+            "visible": true,
+            "disabled": false,
+            "required": true,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            },
+            "options": [
+              {
+                "value": "",
+                "label": "[Pick an Option]"
+              },
+              {
+                "value": "cow",
+                "label": "Cow"
+              },
+              {
+                "value": "pig",
+                "label": "Pig"
+              },
+              {
+                "value": "cat",
+                "label": "Cat"
+              }
+            ],
+            "name": "animals"
+          },
+          "HKPDh-DiuY": {
+            "id": "HKPDh-DiuY",
+            "type": "select",
+            "value": "",
+            "label": "Space Objects",
+            "visible": true,
+            "disabled": false,
+            "required": true,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            },
+            "options": [
+              {
+                "value": "",
+                "label": "[Pick an Option]"
+              },
+              {
+                "value": "planet",
+                "label": "Planet"
+              },
+              {
+                "value": "star",
+                "label": "Star"
+              }
+            ],
+            "name": "space_objects"
+          },
+          "0INdchEiZx": {
+            "id": "0INdchEiZx",
+            "type": "text",
+            "value": "",
+            "label": "Conditional",
+            "visible": true,
+            "disabled": false,
+            "required": true,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "visible": [
+                      {
+                        "nodeId": "nJ7HxEkOWn",
+                        "portName": "output"
+                      }
+                    ]
+                  },
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              },
+              "IFR5zqrpoM": {
+                "id": "IFR5zqrpoM",
+                "x": 147,
+                "y": 116.5,
+                "type": "valueEqualsOneOfOptions",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "Em1YvUjYs0",
+                        "portName": "val1"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "kO4Fdo4u1r"
+                  },
+                  "selectedOptions": {
+                    "values": [
+                      "red"
+                    ]
+                  },
+                  "value": {}
+                }
+              },
+              "Em1YvUjYs0": {
+                "id": "Em1YvUjYs0",
+                "x": 365,
+                "y": 478.5,
+                "type": "and",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "val2": [
+                      {
+                        "nodeId": "27x7a-o0QP",
+                        "portName": "output"
+                      }
+                    ],
+                    "val1": [
+                      {
+                        "nodeId": "IFR5zqrpoM",
+                        "portName": "output"
+                      }
+                    ]
+                  },
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "nJ7HxEkOWn",
+                        "portName": "val2"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "val1": {
+                    "boolean": false
+                  },
+                  "val2": {
+                    "boolean": false
+                  }
+                }
+              },
+              "27x7a-o0QP": {
+                "id": "27x7a-o0QP",
+                "x": 85,
+                "y": 473.5,
+                "type": "valueEqualsOneOfOptions",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "Em1YvUjYs0",
+                        "portName": "val2"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "zzgBhSRL_w"
+                  },
+                  "selectedOptions": {
+                    "values": [
+                      "cow"
+                    ]
+                  },
+                  "value": {}
+                }
+              },
+              "SdcUJ6iWc0": {
+                "id": "SdcUJ6iWc0",
+                "x": 438,
+                "y": 171.5,
+                "type": "valueEqualsOneOfOptions",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "nJ7HxEkOWn",
+                        "portName": "val1"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "HKPDh-DiuY"
+                  },
+                  "selectedOptions": {
+                    "values": [
+                      "planet"
+                    ]
+                  },
+                  "value": {}
+                }
+              },
+              "nJ7HxEkOWn": {
+                "id": "nJ7HxEkOWn",
+                "x": 646,
+                "y": 435.5,
+                "type": "and",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "val2": [
+                      {
+                        "nodeId": "Em1YvUjYs0",
+                        "portName": "output"
+                      }
+                    ],
+                    "val1": [
+                      {
+                        "nodeId": "SdcUJ6iWc0",
+                        "portName": "output"
+                      }
+                    ]
+                  },
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "L9y4-xxI2Q",
+                        "portName": "visible"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "val1": {
+                    "boolean": false
+                  },
+                  "val2": {
+                    "boolean": false
+                  }
+                }
+              }
+            },
+            "name": "field_name"
+          },
+          "MY2DB90X5l": {
+            "id": "MY2DB90X5l",
+            "type": "checkbox",
+            "value": false,
+            "label": "Must be checked",
+            "visible": true,
+            "disabled": false,
+            "required": true,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "visible": [
+                      {
+                        "nodeId": "Y-IGwtLAqI",
+                        "portName": "visible"
+                      }
+                    ]
+                  },
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              },
+              "Y-IGwtLAqI": {
+                "id": "Y-IGwtLAqI",
+                "x": 155,
+                "y": 108.5,
+                "type": "field",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "visible": [
+                      {
+                        "nodeId": "L9y4-xxI2Q",
+                        "portName": "visible"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "0INdchEiZx"
+                  }
+                }
+              }
+            },
+            "name": "must_be_checked"
+          },
+          "gK1l3xcJCE": {
+            "id": "gK1l3xcJCE",
+            "type": "text",
+            "value": "",
+            "label": "Extra field",
+            "visible": true,
+            "disabled": false,
+            "required": true,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 956,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "visible": [
+                      {
+                        "nodeId": "syz92RzhwD",
+                        "portName": "output"
+                      }
+                    ]
+                  },
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              },
+              "zrzGp-NZGc": {
+                "id": "zrzGp-NZGc",
+                "x": 204,
+                "y": 139.5,
+                "type": "field",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {
+                    "value": [
+                      {
+                        "nodeId": "YsQSeI072y",
+                        "portName": "val1"
+                      }
+                    ],
+                    "visible": [
+                      {
+                        "nodeId": "syz92RzhwD",
+                        "portName": "val1"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "fieldId": {
+                    "selectedFieldId": "MY2DB90X5l"
+                  }
+                }
+              },
+              "syz92RzhwD": {
+                "id": "syz92RzhwD",
+                "x": 710,
+                "y": 362.5,
+                "type": "and",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "val2": [
+                      {
+                        "nodeId": "YsQSeI072y",
+                        "portName": "output"
+                      }
+                    ],
+                    "val1": [
+                      {
+                        "nodeId": "zrzGp-NZGc",
+                        "portName": "visible"
+                      }
+                    ]
+                  },
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "L9y4-xxI2Q",
+                        "portName": "visible"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "val1": {
+                    "boolean": false
+                  },
+                  "val2": {
+                    "boolean": false
+                  }
+                }
+              },
+              "YsQSeI072y": {
+                "id": "YsQSeI072y",
+                "x": 471,
+                "y": 349.5,
+                "type": "valueEqualsBoolean",
+                "width": 200,
+                "connections": {
+                  "inputs": {
+                    "val1": [
+                      {
+                        "nodeId": "zrzGp-NZGc",
+                        "portName": "value"
+                      }
+                    ]
+                  },
+                  "outputs": {
+                    "output": [
+                      {
+                        "nodeId": "syz92RzhwD",
+                        "portName": "val2"
+                      }
+                    ]
+                  }
+                },
+                "inputData": {
+                  "val1": {},
+                  "boolean": {
+                    "boolean": true
+                  }
+                }
+              }
+            },
+            "name": "extra_field"
+          }
+        },
+        "fieldsOrder": [
+          "kO4Fdo4u1r",
+          "zzgBhSRL_w",
+          "HKPDh-DiuY",
+          "0INdchEiZx",
+          "MY2DB90X5l",
+          "gK1l3xcJCE"
+        ],
+        "title": "Notice of Address Change"
+      },
+      "id": "9r6iT4V7Y1",
+      "dateCreated": "1583619821082",
+      "dateModified": 1583709510110
+    },
+    {
+      "definition": {
+        "fields": {
+          "S-ckVflS14": {
+            "id": "S-ckVflS14",
+            "type": "text",
+            "value": "",
+            "label": "New Field",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            }
+          },
+          "AgjF6mj2-g": {
+            "id": "AgjF6mj2-g",
+            "type": "checkbox",
+            "value": false,
+            "label": "New Field",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            }
+          }
+        },
+        "fieldsOrder": [
+          "S-ckVflS14",
+          "AgjF6mj2-g"
+        ],
+        "title": "Tax Rate Request",
+        "logic": {
+          "gsDbKCqTjd": {
+            "id": "gsDbKCqTjd",
+            "x": 981,
+            "y": 405,
+            "type": "output",
+            "width": 200,
+            "connections": {
+              "inputs": {
+                "status": [
+                  {
+                    "nodeId": "y6WLylsQ3n",
+                    "portName": "output"
+                  }
+                ]
+              },
+              "outputs": {}
+            },
+            "inputData": {
+              "title": {
+                "text": ""
+              },
+              "status": {}
+            }
+          },
+          "-9ZerzU9ar": {
+            "id": "-9ZerzU9ar",
+            "x": 34,
+            "y": 34.5,
+            "type": "filingValue",
+            "width": 200,
+            "connections": {
+              "inputs": {},
+              "outputs": {
+                "value": [
+                  {
+                    "nodeId": "9mWIjHxCU7",
+                    "portName": "val1"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "fieldName": {
+                "text": "color"
+              }
+            }
+          },
+          "9mWIjHxCU7": {
+            "id": "9mWIjHxCU7",
+            "x": 264,
+            "y": 91.5,
+            "type": "valueEqualsText",
+            "width": 200,
+            "connections": {
+              "inputs": {
+                "val1": [
+                  {
+                    "nodeId": "-9ZerzU9ar",
+                    "portName": "value"
+                  }
+                ]
+              },
+              "outputs": {
+                "output": [
+                  {
+                    "nodeId": "InoSmbE6-H",
+                    "portName": "val1"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "val1": {},
+              "val2": {
+                "text": "red"
+              }
+            }
+          },
+          "r1liFrct2F": {
+            "id": "r1liFrct2F",
+            "x": 32,
+            "y": 296.5,
+            "type": "user",
+            "width": 200,
+            "connections": {
+              "inputs": {},
+              "outputs": {
+                "isAdmin": [
+                  {
+                    "nodeId": "0a6CjOVS5h",
+                    "portName": "boolean"
+                  }
+                ]
+              }
+            },
+            "inputData": {}
+          },
+          "InoSmbE6-H": {
+            "id": "InoSmbE6-H",
+            "x": 520,
+            "y": 264.5,
+            "type": "and",
+            "width": 200,
+            "connections": {
+              "inputs": {
+                "val2": [
+                  {
+                    "nodeId": "0a6CjOVS5h",
+                    "portName": "output"
+                  }
+                ],
+                "val1": [
+                  {
+                    "nodeId": "9mWIjHxCU7",
+                    "portName": "output"
+                  }
+                ]
+              },
+              "outputs": {
+                "output": [
+                  {
+                    "nodeId": "y6WLylsQ3n",
+                    "portName": "test"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "val1": {
+                "boolean": false
+              },
+              "val2": {
+                "boolean": false
+              }
+            }
+          },
+          "0a6CjOVS5h": {
+            "id": "0a6CjOVS5h",
+            "x": 265,
+            "y": 353.5,
+            "type": "booleanReverse",
+            "width": 200,
+            "connections": {
+              "inputs": {
+                "boolean": [
+                  {
+                    "nodeId": "r1liFrct2F",
+                    "portName": "isAdmin"
+                  }
+                ]
+              },
+              "outputs": {
+                "output": [
+                  {
+                    "nodeId": "InoSmbE6-H",
+                    "portName": "val2"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "boolean": {
+                "boolean": false
+              }
+            }
+          },
+          "y6WLylsQ3n": {
+            "id": "y6WLylsQ3n",
+            "x": 750,
+            "y": 321.5,
+            "type": "statusSwitch",
+            "width": 200,
+            "connections": {
+              "inputs": {
+                "test": [
+                  {
+                    "nodeId": "InoSmbE6-H",
+                    "portName": "output"
+                  }
+                ]
+              },
+              "outputs": {
+                "output": [
+                  {
+                    "nodeId": "gsDbKCqTjd",
+                    "portName": "status"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "test": {
+                "boolean": false
+              },
+              "statusIfTrue": {
+                "statusIfTrue": "review"
+              },
+              "statusIfFalse": {
+                "statusIfFalse": "approved"
+              }
+            }
+          }
+        }
+      },
+      "id": "X811Djg_dE",
+      "dateCreated": "1583619821075",
+      "dateModified": 1583780391823
+    },
+    {
+      "definition": {
+        "fields": {
+          "h5fcS1veSy": {
+            "id": "h5fcS1veSy",
+            "type": "text",
+            "value": "",
+            "label": "Name of the pet",
+            "name": "petName",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            }
+          },
+          "evh4bplI96": {
+            "id": "evh4bplI96",
+            "type": "select",
+            "value": "",
+            "label": "Type of pet",
+            "name": "petType",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            },
+            "options": [
+              {
+                "value": "",
+                "label": "[Pick a pet type]"
+              },
+              {
+                "value": "dog",
+                "label": "Dog"
+              },
+              {
+                "value": "cat",
+                "label": "Cat"
+              },
+              {
+                "value": "horse",
+                "label": "Horse"
+              },
+              {
+                "value": "rock",
+                "label": "Rock"
+              }
+            ]
+          },
+          "MEOBKG4YM4": {
+            "id": "MEOBKG4YM4",
+            "type": "text",
+            "value": "",
+            "label": "Age of the pet",
+            "name": "petAge",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            }
+          },
+          "g5_skshodL": {
+            "id": "g5_skshodL",
+            "type": "checkbox",
+            "value": false,
+            "label": "My pet has been spayed/neutered",
+            "name": "isFertile",
+            "visible": true,
+            "disabled": false,
+            "required": false,
+            "logic": {
+              "L9y4-xxI2Q": {
+                "id": "L9y4-xxI2Q",
+                "x": 912,
+                "y": 345.5,
+                "type": "output",
+                "width": 200,
+                "connections": {
+                  "inputs": {},
+                  "outputs": {}
+                },
+                "inputData": {
+                  "label": {
+                    "text": ""
+                  },
+                  "visible": {},
+                  "disabled": {},
+                  "required": {}
+                }
+              }
+            }
+          }
+        },
+        "fieldsOrder": [
+          "h5fcS1veSy",
+          "evh4bplI96",
+          "MEOBKG4YM4",
+          "g5_skshodL"
+        ],
+        "title": "Pet License",
+        "logic": {
+          "GjQAnulaa1": {
+            "id": "GjQAnulaa1",
+            "x": 900,
+            "y": 330,
+            "type": "output",
+            "width": 200,
+            "connections": {
+              "inputs": {
+                "title": [
+                  {
+                    "nodeId": "Yj-WOs8h9v",
+                    "portName": "output"
+                  }
+                ],
+                "fee": [
+                  {
+                    "nodeId": "kOsr7KxgDZ",
+                    "portName": "output"
+                  }
+                ],
+                "status": [
+                  {
+                    "nodeId": "DudQUsdwvT",
+                    "portName": "selectedStatus"
+                  }
+                ]
+              },
+              "outputs": {}
+            },
+            "inputData": {
+              "title": {
+                "text": ""
+              },
+              "status": {},
+              "fee": {
+                "number": 0
+              }
+            }
+          },
+          "vblgzPl-I3": {
+            "id": "vblgzPl-I3",
+            "x": 78,
+            "y": 97.5,
+            "type": "filingValue",
+            "width": 140,
+            "connections": {
+              "inputs": {},
+              "outputs": {
+                "value": [
+                  {
+                    "nodeId": "ec7W6jIeYc",
+                    "portName": "value"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "fieldName": {
+                "text": "petName"
+              }
+            }
+          },
+          "ec7W6jIeYc": {
+            "id": "ec7W6jIeYc",
+            "x": 249,
+            "y": 153.5,
+            "type": "valueToString",
+            "width": 160,
+            "connections": {
+              "inputs": {
+                "value": [
+                  {
+                    "nodeId": "vblgzPl-I3",
+                    "portName": "value"
+                  }
+                ]
+              },
+              "outputs": {
+                "string": [
+                  {
+                    "nodeId": "Yj-WOs8h9v",
+                    "portName": "string1"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "value": {}
+            }
+          },
+          "Yj-WOs8h9v": {
+            "id": "Yj-WOs8h9v",
+            "x": 483,
+            "y": 116.5,
+            "type": "addText",
+            "width": 160,
+            "connections": {
+              "inputs": {
+                "string1": [
+                  {
+                    "nodeId": "ec7W6jIeYc",
+                    "portName": "string"
+                  }
+                ]
+              },
+              "outputs": {
+                "output": [
+                  {
+                    "nodeId": "GjQAnulaa1",
+                    "portName": "title"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "string1": {
+                "text": ""
+              },
+              "string2": {
+                "text": " Pet License"
+              }
+            }
+          },
+          "7DoiGGZZ__": {
+            "id": "7DoiGGZZ__",
+            "x": 86,
+            "y": 473.5,
+            "type": "filingValue",
+            "width": 140,
+            "connections": {
+              "inputs": {},
+              "outputs": {
+                "value": [
+                  {
+                    "nodeId": "2f5j0yH-ZF",
+                    "portName": "val1"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "fieldName": {
+                "text": "isFertile"
+              }
+            }
+          },
+          "2f5j0yH-ZF": {
+            "id": "2f5j0yH-ZF",
+            "x": 280,
+            "y": 501.5,
+            "type": "valueEqualsBoolean",
+            "width": 200,
+            "connections": {
+              "inputs": {
+                "val1": [
+                  {
+                    "nodeId": "7DoiGGZZ__",
+                    "portName": "value"
+                  }
+                ]
+              },
+              "outputs": {
+                "output": [
+                  {
+                    "nodeId": "kOsr7KxgDZ",
+                    "portName": "test"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "val1": {},
+              "val2": {
+                "boolean": true
+              }
+            }
+          },
+          "kOsr7KxgDZ": {
+            "id": "kOsr7KxgDZ",
+            "x": 547,
+            "y": 456.5,
+            "type": "numberSwitch",
+            "width": 140,
+            "connections": {
+              "inputs": {
+                "test": [
+                  {
+                    "nodeId": "2f5j0yH-ZF",
+                    "portName": "output"
+                  }
+                ]
+              },
+              "outputs": {
+                "output": [
+                  {
+                    "nodeId": "GjQAnulaa1",
+                    "portName": "fee"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "test": {
+                "boolean": false
+              },
+              "numberIfTrue": {
+                "number": 10
+              },
+              "numberIfFalse": {
+                "number": 50
+              }
+            }
+          },
+          "DudQUsdwvT": {
+            "id": "DudQUsdwvT",
+            "x": 506,
+            "y": 315.5,
+            "type": "status",
+            "width": 200,
+            "connections": {
+              "inputs": {},
+              "outputs": {
+                "selectedStatus": [
+                  {
+                    "nodeId": "GjQAnulaa1",
+                    "portName": "status"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "statusValue": {
+                "selectedStatus": "approved"
+              }
+            }
+          }
+        }
+      },
+      "id": "-C3y13-Dya",
+      "dateCreated": 1583622703442,
+      "dateModified": 1583814906894
+    },
+    {
+      "definition": {
+        "fields": {},
+        "fieldsOrder": [],
+        "title": "Public Gathering Application"
+      },
+      "id": "e_6l8ifWNn",
+      "dateCreated": 1583623050372,
+      "dateModified": 1583623050372
+    },
+    {
+      "definition": {
+        "fields": {},
+        "fieldsOrder": [],
+        "title": "Parking Ticket Payment"
+      },
+      "id": "kOw6mj2Qpm",
+      "dateCreated": 1583624236929,
+      "dateModified": 1583624236929
+    }
+  ],
+  "records": [
+    {
+      "wizardId": "-C3y13-Dya",
+      "values": {
+        "petName": {
+          "value": "Ruffles",
+          "name": "petName",
+          "visible": true
+        },
+        "petType": {
+          "value": "cat",
+          "name": "petType",
+          "visible": true
+        },
+        "petAge": {
+          "value": "14",
+          "name": "petAge",
+          "visible": true
+        },
+        "isFertile": {
+          "value": true,
+          "name": "isFertile",
+          "visible": true
+        }
+      },
+      "id": "AZe7VYgr65",
+      "title": "Ruffles Pet License",
+      "status": "approved",
+      "fee": 50
+    },
+    {
+      "wizardId": "-C3y13-Dya",
+      "values": {
+        "petName": {
+          "value": "Chester",
+          "name": "petName",
+          "visible": true
+        },
+        "petType": {
+          "value": "horse",
+          "name": "petType",
+          "visible": true
+        },
+        "petAge": {
+          "value": "17",
+          "name": "petAge",
+          "visible": true
+        },
+        "isFertile": {
+          "value": false,
+          "name": "isFertile",
+          "visible": true
+        }
+      },
+      "id": "-pfhq5Viel",
+      "title": "Chester Pet License",
+      "status": "approved",
+      "fee": 50
+    }
+  ],
+  "user": {
+    "firstName": "Christopher",
+    "lastName": "Patty",
+    "isAdmin": false
+  }
+}
