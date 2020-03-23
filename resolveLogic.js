@@ -23,7 +23,7 @@ const fireNodeFunction = (node, inputValues, nodeType) => {
     case "valueEqualsText": return { output: inputValues.val1 === inputValues.val2 };
     case "valueEqualsValue": return { output: inputValues.val1 === inputValues.val2 };
     case "textSwitch": return { output: inputValues.test ? inputValues.textIfTrue : inputValues.textIfFalse}
-    case "numberSwitch": console.log(inputValues); return { output: inputValues.test ? inputValues.numberIfTrue : inputValues.numberIfFalse}
+    case "numberSwitch": return { output: inputValues.test ? inputValues.numberIfTrue : inputValues.numberIfFalse}
     case "statusSwitch": return { output: inputValues.test ? inputValues.statusIfTrue : inputValues.statusIfFalse}
     case "status": return { selectedStatus: inputValues.statusValue }
     case "filingValue": {
@@ -47,30 +47,10 @@ const resolveInputControls = (type, data) => {
       return data.text;
     case "status":
       return data.selectedStatus
-    case "textSwitch":
-      return {
-        textIfTrue: data.textIfTrue.text,
-        textIfFalse: data.textIfFalse.text
-      };
-    case "numberSwitch":
-      return {
-        numberIfTrue: data.numberIfTrue.number,
-        numberIfFalse: data.numberIfFalse.number
-      };
-    case "statusSwitch":
-      return {
-        statusIfTrue: data.statusIfTrue.status,
-        statusIfFalse: data.statusIfFalse.status
-      };
     case "value":
       return Object.keys(data).length ? data : undefined
-    case "filingValue":
-      return data.fieldName.text
-    case "addText":
-      return {
-        string1: data.string1.text,
-        string2: data.string2.text
-      }
+    case "fieldName":
+      return data.name
     default:
       return data;
   }

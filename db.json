@@ -1548,8 +1548,8 @@
         "logic": {
           "GjQAnulaa1": {
             "id": "GjQAnulaa1",
-            "x": 900,
-            "y": 330,
+            "x": 872,
+            "y": 336,
             "type": "output",
             "width": 200,
             "connections": {
@@ -1568,7 +1568,7 @@
                 ],
                 "status": [
                   {
-                    "nodeId": "DudQUsdwvT",
+                    "nodeId": "gDgTqiLhps",
                     "portName": "selectedStatus"
                   }
                 ]
@@ -1585,29 +1585,6 @@
               }
             }
           },
-          "vblgzPl-I3": {
-            "id": "vblgzPl-I3",
-            "x": 78,
-            "y": 97.5,
-            "type": "filingValue",
-            "width": 140,
-            "connections": {
-              "inputs": {},
-              "outputs": {
-                "value": [
-                  {
-                    "nodeId": "ec7W6jIeYc",
-                    "portName": "value"
-                  }
-                ]
-              }
-            },
-            "inputData": {
-              "fieldName": {
-                "text": "petName"
-              }
-            }
-          },
           "ec7W6jIeYc": {
             "id": "ec7W6jIeYc",
             "x": 249,
@@ -1618,7 +1595,7 @@
               "inputs": {
                 "value": [
                   {
-                    "nodeId": "vblgzPl-I3",
+                    "nodeId": "14mgoh29Fg",
                     "portName": "value"
                   }
                 ]
@@ -1669,29 +1646,6 @@
               }
             }
           },
-          "7DoiGGZZ__": {
-            "id": "7DoiGGZZ__",
-            "x": 86,
-            "y": 473.5,
-            "type": "filingValue",
-            "width": 140,
-            "connections": {
-              "inputs": {},
-              "outputs": {
-                "value": [
-                  {
-                    "nodeId": "2f5j0yH-ZF",
-                    "portName": "val1"
-                  }
-                ]
-              }
-            },
-            "inputData": {
-              "fieldName": {
-                "text": "isFertile"
-              }
-            }
-          },
           "2f5j0yH-ZF": {
             "id": "2f5j0yH-ZF",
             "x": 280,
@@ -1702,7 +1656,7 @@
               "inputs": {
                 "val1": [
                   {
-                    "nodeId": "7DoiGGZZ__",
+                    "nodeId": "hzaQIciAhT",
                     "portName": "value"
                   }
                 ]
@@ -1759,12 +1713,12 @@
               }
             }
           },
-          "DudQUsdwvT": {
-            "id": "DudQUsdwvT",
-            "x": 506,
-            "y": 315.5,
+          "gDgTqiLhps": {
+            "id": "gDgTqiLhps",
+            "x": 567,
+            "y": 325.5,
             "type": "status",
-            "width": 200,
+            "width": 150,
             "connections": {
               "inputs": {},
               "outputs": {
@@ -1781,12 +1735,58 @@
                 "selectedStatus": "approved"
               }
             }
+          },
+          "14mgoh29Fg": {
+            "id": "14mgoh29Fg",
+            "x": 39,
+            "y": 136.5,
+            "type": "filingValue",
+            "width": 170,
+            "connections": {
+              "inputs": {},
+              "outputs": {
+                "value": [
+                  {
+                    "nodeId": "ec7W6jIeYc",
+                    "portName": "value"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "fieldName": {
+                "name": "petName"
+              }
+            }
+          },
+          "hzaQIciAhT": {
+            "id": "hzaQIciAhT",
+            "x": 39,
+            "y": 492.5,
+            "type": "filingValue",
+            "width": 170,
+            "connections": {
+              "inputs": {},
+              "outputs": {
+                "value": [
+                  {
+                    "nodeId": "2f5j0yH-ZF",
+                    "portName": "val1"
+                  }
+                ]
+              }
+            },
+            "inputData": {
+              "fieldName": {
+                "name": "isFertile"
+              }
+            }
           }
         }
       },
       "id": "-C3y13-Dya",
       "dateCreated": 1583622703442,
-      "dateModified": 1583814906894
+      "dateModified": 1583891748014
     },
     {
       "definition": {
@@ -1867,6 +1867,64 @@
       "title": "Chester Pet License",
       "status": "approved",
       "fee": 50
+    },
+    {
+      "wizardId": "-C3y13-Dya",
+      "values": {
+        "petName": {
+          "value": "Antlers",
+          "name": "petName",
+          "visible": true
+        },
+        "petType": {
+          "value": "cat",
+          "name": "petType",
+          "visible": true
+        },
+        "petAge": {
+          "value": "12",
+          "name": "petAge",
+          "visible": true
+        },
+        "isFertile": {
+          "value": false,
+          "name": "isFertile",
+          "visible": true
+        }
+      },
+      "id": "NH9B9Mm_FC",
+      "title": " Pet License",
+      "status": "approved",
+      "fee": 50
+    },
+    {
+      "wizardId": "-C3y13-Dya",
+      "values": {
+        "petName": {
+          "value": "Oreo",
+          "name": "petName",
+          "visible": true
+        },
+        "petType": {
+          "value": "dog",
+          "name": "petType",
+          "visible": true
+        },
+        "petAge": {
+          "value": "12",
+          "name": "petAge",
+          "visible": true
+        },
+        "isFertile": {
+          "value": true,
+          "name": "isFertile",
+          "visible": true
+        }
+      },
+      "id": "sd3uDKVVlE",
+      "title": "Oreo Pet License",
+      "status": "approved",
+      "fee": 10
     }
   ],
   "user": {

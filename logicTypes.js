@@ -253,10 +253,11 @@ module.exports.NodeTypes = {
   filingValue: {
     label: "Filing Value",
     description: "Outputs a value from the current filing",
-    type: 'filingValue',
+    type: "filingValue",
+    initialWidth: 170,
     inputs: [
       {
-        type: "string",
+        type: "fieldName",
         name: "fieldName",
         label: "Field Name"
       }
@@ -427,5 +428,20 @@ module.exports.InputTypes = {
     acceptTypes: ["status"],
     color: "pink",
     hidePort: true
+  },
+  fieldName: {
+    type: "fieldName",
+    label: "Field Name",
+    acceptTypes: ["fieldName"],
+    color: "pink",
+    hidePort: true,
+    controls: [
+      {
+        type: "select",
+        name: "name",
+        placeholder: "[Pick a Field]",
+        options: []
+      }
+    ]
   }
 }
